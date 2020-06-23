@@ -70,8 +70,8 @@
         <div class="flex-center position-ref full-height">
 
             <div class="top-right links">
-                    <a href="#">Login</a>
-                    <a href="#">Register</a>
+                    <a href="{{route('list')}}">List</a>
+
             </div>
 
             <div class="container">

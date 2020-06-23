@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', "AddressBookController@index");
+Route::get('/', "AddressBookController@index")->name('list');
 
-Route::match(["get", "post"], "create", "AddressBookController@create");
+Route::match(["get", "post"], "create", "AddressBookController@create")->name('create');
 Route::match(["get", "post"], "edit/{id}", "AddressBookController@update");
 Route::match(["get"], "delete/{id}", "AddressBookController@deleteData");
 Route::post('/checkemail',['uses'=>'AddressBookController@checkEmail']);
